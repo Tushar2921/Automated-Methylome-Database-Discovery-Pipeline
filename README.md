@@ -13,7 +13,7 @@ Queries the OpenAlex and Crossref APIs using parent database publications. It id
 Using the citing papers identified in Step 1, this script attempts to retrieve the full text through Europe PMC, Unpaywall, and publisher sources. When full text is unavailable, it retrieves the abstract via OpenAlex. Each paper is classified as:
 # Fully Read
 # Abstract Only
-# Failed** (Paywalled/Unavailable)
+# Failed (Paywalled/Unavailable)
 
 # 3. Candidate Extraction (`3_extract_candidates.py`)
 Analyzes the retrieved text using context-gated filtering. It processes only sentences containing both methylome-related keywords (e.g., WGBS, RRBS, bisulfite) and database-related terms (e.g., repository, atlas, portal). Strict regular expression patterns are then applied to extract potential database names.
