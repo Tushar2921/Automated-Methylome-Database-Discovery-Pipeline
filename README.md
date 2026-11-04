@@ -13,8 +13,8 @@ The pipeline contains four sequential Python scripts:
 | Step | Script | Purpose |
 |---|---|---|
 | 1 | `1_citation_analysis.py` | Finds recent papers citing parent database publications using OpenAlex and Crossref |
-| 2 | `2.2_fulltext_harversting.py` | Retrieves full text from PMC, Unpaywall, publisher pages, or abstracts from OpenAlex |
-| 3 | `3.1_extract_candidates.py` | Extracts possible database names using methylome/database context filtering and regex |
+| 2 | `2_fulltext_harversting.py` | Retrieves full text from PMC, Unpaywall, publisher pages, or abstracts from OpenAlex |
+| 3 | `3_extract_candidates.py` | Extracts possible database names using methylome/database context filtering and regex |
 | 4 | `4_final_methylome_screening.py` | Performs final filtering to remove tools, platforms, general repositories, parent databases, and false positives |
 
 > **Important:** The final output is a candidate list, not a fully verified database list. Manual verification is required.
@@ -27,8 +27,8 @@ Current scripts:
 
 ```text
 1_citation_analysis.py
-2.2_fulltext_harversting.py
-3.1_extract_candidates.py
+2_fulltext_harversting.py
+3_extract_candidates.py
 4_final_methylome_screening.py
 ```
 
@@ -182,7 +182,7 @@ citing_papers.xlsx
 ### Step 2: Full-Text Harvesting
 
 ```bash
-python 2.2_fulltext_harversting.py
+python 2_fulltext_harversting.py
 ```
 
 ### Input
@@ -222,7 +222,7 @@ Each paper is classified as:
 ### Step 3: Candidate Extraction
 
 ```bash
-python 3.1_extract_candidates.py
+python 3_extract_candidates.py
 ```
 
 ### Input
