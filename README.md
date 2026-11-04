@@ -439,8 +439,8 @@ Run order:
 
 ```bash
 python 1_citation_analysis.py
-python 2.2_fulltext_harversting.py
-python 3.1_extract_candidates.py
+python 2_fulltext_harversting.py
+python 3_extract_candidates.py
 python 4_final_methylome_screening.py
 ```
 
